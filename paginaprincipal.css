@@ -14,9 +14,9 @@ body{
 .relleno{
     position: absolute;
     width: 100%;
-    height: 85%;
+    height: 100%;
     bottom: 0;
-    background: linear-gradient(90deg , rgb(98, 0, 128) 0% , 30% , transparent 100%);
+    background: linear-gradient(90deg  , black 0% , 60% , rgba(0, 0, 0, 0) 100%);
     
 }
 .padreenlace{
@@ -26,8 +26,26 @@ body{
     justify-content: center;
     height: 15%;
     gap: 50px;
-    background-color: rgb(149, 21, 199);
+    background-color: rgba(0, 0, 0, 0);
     z-index: 1;
+    position: relative;
+}
+.paloma{
+    width: 250px;
+    position: absolute;
+    right: 30px;
+    top: 15%;
+    animation:  saltar 2s linear infinite alternate;
+    transition: all .3s linear;
+}
+@keyframes saltar{
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        filter: drop-shadow(0 0 20px #fff);
+        transform: translateY(-10px);
+    }
 }
 .logo{
     display: flex;
@@ -46,26 +64,23 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: absolute;
+    position: relative;
     top: 15%;
     width: 100%;
-    height: 0;
-    overflow: hidden;
-    background-color: aliceblue;
+    height: 100%;
+    background-color: rgba(240, 248, 255, 0);
     transition: all .3s linear;
- 
 }
 ol{
     display: flex;
-    flex-direction: column;
     gap: 30px;
     align-items: center;
     justify-content: center;
     list-style-type: none;
 }
 a{
-    color: rgb(113, 0, 148);
-    padding: 10px 5px;
+    color: rgb(255, 255, 255);
+    padding: 5px 5px;
     position: relative;
     text-decoration: none;
     font-family: 'Courier New', Courier, monospace;
@@ -76,7 +91,7 @@ a::before{
     position: absolute;
     bottom: 0;
     left: 50%;
-    background-color: rgb(147, 1, 184);
+    background-color: rgb(255, 255, 255);
     transition: all .2s linear;
     width: 0;
     height: 3px;
@@ -88,7 +103,7 @@ a:hover::before{
 .menu{
     width: 30px;
     height: 30px;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -105,19 +120,7 @@ a:hover::before{
     transform-origin: left;
     transition: all .3s linear;
 }
-.hola div:nth-child(1){
-    transform: rotate(45deg);
-}
-.hola div:nth-child(2){
-    opacity: 0;
-}
-.hola div:nth-child(3){
-    transform: rotate(-45deg);
-}
-.ancho{
-    height: 85%;
-    z-index: 1;
-}
+
 .eslogan{
     position: absolute;
     top: 10%;
@@ -151,7 +154,16 @@ a:hover::before{
     gap: 50px;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    padding-top: 50px;
+    background-image: url(assets/imagen1.JPG);
+    padding-bottom: 100px;
+}
+.relleno2{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.616);
+    position: absolute;
+    top: 0;
 }
 .pregunta{
     width: 80%;
@@ -161,10 +173,13 @@ a:hover::before{
 .pregunta h1{
     font-family: 'Courier New', Courier, monospace;
     font-size: 2em;
-    color: blueviolet;
+    color: rgb(255, 255, 255);
     text-align: center;
     position: relative;
     top: 50px;
+    animation:  mover linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 .container2{
     width: 100%;
@@ -177,14 +192,17 @@ a:hover::before{
 
 }
 .container2 img{
-    width: 30%;
+    width: 70%;
     height: 40%;
     border-radius: 20px;
+    animation:  mover linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%; 
     
 }
 .container2 p{
     font-family: 'Courier New', Courier, monospace;
-    color: blueviolet;
+    color: rgb(255, 255, 255);
     text-transform: capitalize;
     text-align: justify;
 }
@@ -199,6 +217,7 @@ a:hover::before{
     margin-top: 100px;
     gap: 5px;
     margin-bottom: 100px;
+    
 }
 .cajaimg{
     width: 70%;
@@ -207,6 +226,9 @@ a:hover::before{
     align-items: center;
     justify-content: center;
     gap: 5px;
+    animation:  mover linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 .cajaimg img{
     border-radius: 10px;
@@ -235,34 +257,169 @@ a:hover::before{
     margin-bottom: 70px;
 }
 .articulo3 h1{
-    color: blueviolet;
+    color: rgb(0, 0, 0);
     font-family: 'Courier New', Courier, monospace;
     text-transform: capitalize;
     font-size: 3em;
+    animation:  mover linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+@keyframes mover{
+    from{
+        opacity: .4;
+        scale: .5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
 }
 .articulo3 img{
-    width: 80%;
+    width: 70%;
     border-radius: 10px;
     box-shadow: 0 0 10px black;
 }
 footer{
     width: 100%;
-    background-color: blueviolet;
+    background-image: url(assets/imagen1.JPG);
     display: flex;
     align-items: center;
     justify-content: center;
-
+    position: relative;
+}
+footer::before{
+    position: absolute;
+    content: "";
+    background-color: rgba(0, 0, 0, 0.582);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transition: all .3s linear;
 }
 .footer{
     display: flex;
     gap: 20px;
     align-items: center;
     justify-content: center;
+    z-index: 1;
 }
 .footer h5{
     color: aliceblue;
     text-transform: capitalize;
     font-family: 'Courier New', Courier, monospace;
+}
+@media (max-width:500px){
+    .hola div:nth-child(1){
+    transform: rotate(45deg);
+}
+.hola div:nth-child(2){
+    opacity: 0;
+}
+.hola div:nth-child(3){
+    transform: rotate(-45deg);
+}
+.padreenlace {
+    position: static;
+}
+.enlace{
+    position: absolute;
+    overflow: hidden;
+    bottom: 0%;
+    width: 100%;
+    height: 0;
+    background-color: rgba(0, 0, 0, 0.678);
+}
+ol{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.menu{
+    display: flex;
+}
+.ancho{
+    height: 85%;
+    z-index: 1;
+}
+    .eslogan{
+        top: 20%;
+    }
+    .eslogan h1{
+        font-size: 3.8em;
+    }
+    .eslogan .h41{
+        font-size: 1.8em;
+        top: 80px;
+    }
+    .eslogan h4{
+        top: 70px;
+        text-transform: capitalize;
+    }
+    .container2 p{
+        font-size: 1em;
+    }
+    .pregunta h1{
+        font-size: 1em;
+        margin-bottom: 100px;
+    }
+    .pregunta{
+        width: 100%;
+        height: 100%;
+    }
+    .container2{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .container2 img{
+        float: right;
+        width: 90%;
+        height: 200px;
+    }
+    .cajaimg .img1{
+        width: 150px;
+        height: 150px;
+    }
+    .cajaimg .img2{
+        width: 150px;
+        height: 150px;
+    }
+    .cajaimg .img3{
+        width: 150px;
+        height: 150px;
+    }
+    .cajaimg .img4{
+        width: 150px;
+        height: 150px;
+    }
+    .articulo3 img{
+        width: 90%;
+        height: 400px;
+    }
+    .articulo3 h1{
+        font-size: 1.7em;
+        margin-bottom: 50px;
+    }
+    .articulo3 {
+        width: 100%;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer h5{
+        font-size: .4.7em;
+        gap: 0;
+    }
+    .paloma{
+        width: 100px;
+        right: 8%;
+    }
+
+
 }
 
 

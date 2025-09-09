@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Historia</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .atras{
+            width: 100%;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            height: 60px;
+            position: relative;
+            justify-content: center;
+        }
+        .atras .imagen{
+            border-radius: 10px;
+            width: 40px;
+            position: absolute;
+            right: 10px;
+        }
+        .atras .imagen2{
+            position: absolute;
+            left: 10px;
+            top: 10px;
+        }
+        .atras .paloma{
+            width: 60px;
+            position: relative;
+            animation: flotar 2s linear infinite alternate;
+        }
+        @keyframes flotar{
+            from{
+                filter: drop-shadow(0 0 10px #fff);
+            }
+            to{
+                filter: drop-shadow(none);
+            }
+        }
+        section{
+            width: 100%;
+            height: 100%;
+            background-image: url(assets/imagen\ de\ la\ cruz.jpg);
+            position: relative;
+            display: flex;
+            justify-content: center;
+            background-size: 100% 100%;
+            align-items: center;
+        }
+        section::before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.678);
+            top: 0;
+        }
+        article{
+            width: 90%;
+            height: 100%;
+            position: relative;
+            z-index: 1;
+        }
+        article h1{
+            color: aliceblue;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-transform: capitalize;
+            text-align: center;
+        }
+        article h3{
+            color: aliceblue;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-transform: capitalize;
+            text-align: start;
+        }
+        article p{
+            color: aliceblue;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-transform: capitalize;
+            text-align: justify;
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <div class="atras">
+            <a href="paginaprincipal.html"><img class="imagen2" src="assets/arrow_back_41dp_E3E3E3_FILL0_wght400_GRAD0_opsz40.png" alt="atras"></a>
+            <img class="paloma" src="assets/1000076857-removebg-preview.png" alt="paloma">
+            <img class="imagen" src="assets/logo.png" alt="logo">
+        </div>
+    </header>
+    <section>
+        <article class="articulo1">
+            <h1>nuestra historia</h1>
+            <p>La historia del catolicismo inicia con las enseñanzas de Jesús de Nazaret y sus apóstoles en el siglo I dC, 
+            quienes difundieron su mensaje y fundaron las primeras comunidades
+            cristianas.. La Iglesia Católica afirma ser la continuación directa de esta fundación, 
+            con San Pedro como el primer papá. El cristianismo fue perseguido inicialmente, 
+            pero gracias al Edicto de Milán (313 dC) ya su conversión en la religión oficial del 
+            Imperio Romano (380 dC), se consolidó y se expandió. A lo largo de los siglos, 
+            la Iglesia ha pasado por cismas como el de Oriente y Occidente (1054), 
+            ha enfrentado la Reforma Protestante (siglo XVI), y ha participado en movimientos como las Cruzadas y la Ilustración, 
+            culminando en el Concilio Vaticano II (década de 1960). </p>
+            <h1>Orígenes (Siglo I d. C.)</h1>
+            <h3>Jesús y sus discípulos:</h3>
+            <p>La Iglesia Católica se origina en las enseñanzas de Jesús y en su mandato a sus 
+            apóstoles de difundir sus enseñanzas por todo el mundo. </p>
+            <h3>San pedro:</h3>
+            <p>Se considera que Simón Pedro fue el primer papá, una figura que establece la línea de sucesión hasta el presente.</p>
+            <h3>persecución y difusión:</h3>
+            <p>A pesar de la persecución en los primeros siglos, el cristianismo se extendió en el Imperio Romano, gracias a la labor de los apóstoles como Pedro y Pablo. </p>
+            <h1>Consolidación (Siglos IV-VIII)</h1>
+            <h3>Edicto de Milán (313 d.C.):</h3>
+            <p>Otorgó libertad religiosa a los cristianos dentro del Imperio Romano.</p>
+            <h3>Religión oficial:</h3>
+            <p>En el año 380 dC, el cristianismo se convirtió en la religión oficial del Imperio Romano. </p>
+            <h3>Cisma de Oriente y Occidente (1054):</h3>
+            <p>La división del Imperio Romano y otras diferencias doctrinales y de autoridad llevaron a la separación entre la Iglesia Católica (Occidente) y la Iglesia Ortodoxa (Oriente).</p>
+            <h3>Papado y monacato:</h3>
+            <p>La Iglesia se consolidó como una institución con jerarquía, y los monasterios se convirtieron en centros de cultura y conocimiento. </p>
+            <h1>Expansión y Conflictos (Siglos VIII-XVIII)</h1>
+            <h3>Alianzas políticas:</h3>
+            <p>La Iglesia inició alianzas con reyes y emperadores, como Carlomagno. </p>
+            <h3>Contrarreforma (Siglo XVI):</h3>
+            <p>En respuesta a la Reforma Protestante, la Iglesia llevó a cabo un proceso de reforma y renovación. </p>
+            <h3>Misioneros:</h3>
+            <p>El catolicismo se expande ampliamente a América Latina y otras partes del mundo.</p>
+            <h1>Modernidad y actualidad (Siglo XX-XXI)</h1>
+            <h3>Concilio Vaticano II (década de 1960):</h3>
+            <p>Se introdujeron cambios importantes en las prácticas y la organización de la Iglesia.</p>
+            <h3>Impacto en la cultura:</h3>
+            <p>La Iglesia ha tenido un papel fundamental en el desarrollo de la educación, la ciencia y el arte, así como en la política mundial. </p>
+        </article>
+    </section>
+    <footer>
+
+    </footer>
+</body>
+</html>
