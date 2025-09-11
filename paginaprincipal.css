@@ -16,7 +16,7 @@ body{
     width: 100%;
     height: 100%;
     bottom: 0;
-    background: linear-gradient(90deg  , black 0% , 60% , rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(90deg  , rgba(80, 199, 0, 0.658) 0% , 40% , rgba(0, 255, 0, 0) 100%);
     
 }
 .padreenlace{
@@ -156,41 +156,50 @@ a:hover::before{
     align-items: center;
     justify-content: center;
     padding-top: 50px;
-    background-image: url(assets/imagen1.JPG);
     padding-bottom: 100px;
 }
-.relleno2{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.616);
-    position: absolute;
-    top: 0;
-}
+
 .pregunta{
-    width: 80%;
+    width: 90%;
     height: 400px;
     position: relative;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(assets/imagen1.JPG);
+    border-radius: 30px;
+}
+.pregunta::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    top: 0;
+    background: linear-gradient(90deg , green 0% , 40% , transparent 100%);
 }
 .pregunta h1{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 2em;
+    font-size: 1.6em;
     color: rgb(255, 255, 255);
     text-align: center;
     position: relative;
-    top: 50px;
+    top: 100px;
     animation:  mover linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
 }
 .container2{
-    width: 100%;
+    width: 90%;
     height: 100%;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
-
+    margin-bottom: 40px;
 }
 .container2 img{
     width: 70%;
@@ -288,11 +297,12 @@ footer{
     align-items: center;
     justify-content: center;
     position: relative;
+    padding: 10px 0px;
 }
 footer::before{
     position: absolute;
     content: "";
-    background-color: rgba(0, 0, 0, 0.582);
+    background-color: rgba(32, 231, 6, 0.582);
     width: 100%;
     height: 100%;
     top: 0;
@@ -305,10 +315,11 @@ footer::before{
     justify-content: center;
     z-index: 1;
 }
-.footer h5{
+.footer div{
     color: aliceblue;
     text-transform: capitalize;
     font-family: 'Courier New', Courier, monospace;
+    font-size: .7em;
 }
 @media (max-width:500px){
     .hola div:nth-child(1){
@@ -329,8 +340,9 @@ footer::before{
     bottom: 0%;
     width: 100%;
     height: 0;
-    background-color: rgba(0, 0, 0, 0.678);
+    background-color: rgb(30, 172, 12);
     z-index: 1;
+    border-radius: 30px;
 }
 ol{
     display: flex;
@@ -364,7 +376,8 @@ ol{
         font-size: 1em;
     }
     .pregunta h1{
-        font-size: 1em;
+        font-size: 1.3em;
+        top: 50px;
         margin-bottom: 100px;
     }
     .pregunta{
@@ -373,7 +386,7 @@ ol{
     }
     .container2{
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
     .container2 img{
         float: right;
