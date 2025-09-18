@@ -8,8 +8,24 @@ body{
     width: 100%;
     height: 100vh;
     position: relative;
-    background-image: url(assets/imagen1.JPG);
+
     background-size: 100% 100%;
+    animation:  cambiar 20s linear infinite alternate;
+}
+@keyframes cambiar{
+    0%{
+        background-image: url(assets/imagen1.JPG);
+    }
+    40%{
+        background-image: url(assets/imagen3.jpg);
+    }
+    70%{
+        background-image: url(assets/imagen4.jpg);
+    }
+    100%{
+        background-image: url(assets/imagen1\ de\ la\ iglesia\ de\ roma.jpg);
+    }
+    
 }
 .relleno{
     position: absolute;
