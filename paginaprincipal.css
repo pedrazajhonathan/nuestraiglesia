@@ -12,7 +12,13 @@ body{
     background-size: 100% 100%;
     animation:  cambiar 20s linear infinite alternate;
 }
-
+video{
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
 .relleno{
     position: absolute;
     width: 100%;
@@ -20,7 +26,7 @@ body{
     bottom: 0;
     background: linear-gradient(90deg  , rgba(80, 199, 0, 0.658) 0% , 40% , rgba(0, 255, 0, 0)
      100%);
-    backdrop-filter: blur(3px);
+
     
 }
 .padreenlace{
