@@ -8,7 +8,7 @@ body{
     width: 100%;
     height: 100vh;
     position: relative;
-
+    background-image: url(assets/fondo\ en\ pc.jpg);
     background-size: 100% 100%;
     animation:  cambiar 20s linear infinite alternate;
 }
@@ -86,6 +86,7 @@ ol{
     justify-content: center;
     list-style-type: none;
 }
+
 a{
     color: rgb(255, 255, 255);
     padding: 10px 0px;
@@ -315,7 +316,7 @@ footer{
 footer::before{
     position: absolute;
     content: "";
-    background-color: rgba(34, 34, 34, 0.582);
+    background-color: rgba(58, 38, 38, 0.91);
     width: 100%;
     height: 100%;
     top: 0;
@@ -338,6 +339,7 @@ footer::before{
     .hola div:nth-child(1){
     transform: rotate(45deg);
 }
+
 .hola div:nth-child(2){
     opacity: 0;
 }
